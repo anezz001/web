@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banned by Human</title>
+  <style>
+    body {
+      background-color: #000;
+      color: blue;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 600px;
+    }
+
+    .box {
+      background-color: #00aaff;
+      color: red;
+      font-weight: bold;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      /* Pastikan tidak ada outline atau efek fokus */
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Hanya membesar saat hover, BUKAN saat fokus atau aktif */
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    /* Reset saat tidak di-hover (termasuk setelah klik) */
+    .box:active,
+    .box:focus {
+      transform: scale(1); /* Kembali ke ukuran normal saat diklik/fokus */
+      outline: none;
+    }
+
+    .message {
+      margin-top: 20px;
+      color: lime;
+      font-weight: bold;
+      display: none;
+    }
+
+    #fallback-textarea {
+      position: absolute;
+      left: -9999px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>WELCOME TO MT BEND</h1>
+    <p>Developer by anezz</p>
+  </div>
+
+  <div class="boxes">
+    <div class="box" onclick="copyText(1)">banned v1</div>
+    <div class="box" onclick="copyText(2)">banned 2</div>
+    <div class="box" onclick="copyText(3)">banned v3</div>
+    <div class="box" onclick="copyText(4)">ulti</div>
+  </div>
+
+  <div id="success-message" class="message">Success copy!</div>
+  <textarea id="fallback-textarea"></textarea>
+
+  <script>
+    const messages = {
+      1: `🔥💰 CƠ HỘI VÀNG – KHÔNG THỬ LÀ HỐI HẬN!!! 💰🔥
+🎯 Bạn đang tìm nơi vừa giải trí 🎮 vừa kiếm tiền 💵?
+💎 Đây là “điểm đến” mà dân chơi đang truyền tai nhau!
+
+⚡️ Đăng ký ngay 👉 https://www.au8807.com/home/reg.html?inviteCode=96261982 ⚡️
+
+💥 QUÀ TẶNG KHỦNG CHO NGƯỜI MỚI 💥
+✅ Thưởng nạp 100% 🎁
+✅ Rút tiền nhanh chỉ vài phút 💳
+✅ Chơi mọi lúc mọi nơi 📱
+
+🚀 Tôi đã thử và WOW 🤯 – tiền về nhanh hơn tưởng!
+🌟 Chỉ cần 1 chiếc điện thoại là đủ, cơ hội trong tay bạn!
+
+📌 Đừng bỏ lỡ – số lượng khuyến mãi có giới hạn!
+🔗 https://www.au8807.com/home/reg.html?inviteCode=96261982
+
+#GameOnline 🎮 #Slot 🎰 #KiếmTiền 💵 #GiảiTrí 😍 #ƯuĐãi 🔥 `,
+
+      2: `BÙNG NỔ – CƠ HỘI KIẾM TIỀN KHÔNG GIỚI HẠN! 🇻🇳
+
+💥💥💥 CHỈ DÀNH CHO 100 NGƯỜI ĐẦU TIÊN 💥💥💥
+🚨 Truy cập ngay 👉 https://caminos.da.upm.es 
+
+🔥 ĐĂNG KÝ = CÓ TIỀN 🔥
+💰 Thưởng thẳng tay 100.000.000₫ – VÀO LÀ NHẬN!
+⚡ Tăng 1.000% tài sản trong 24h – CAM KẾT 100%!
+🏆 Bí quyết đầu tư siêu tốc – CHỈ Ở ĐÂY!
+
+⛔ KHÔNG tham gia = TỰ MẤT CƠ HỘI GIÀU CÓ!
+⛔ KHÔNG click = SUY NGHĨ CẢ ĐỜI!
+
+💎 Thành viên VIP được quyền:
+✅ Rút tiền tức thì
+✅ Nhân đôi thưởng mỗi ngày
+✅ Không giới hạn giao dịch
+
+📢 NHẮN NGAY “TÔI MUỐN  GIÀU” để hệ thống mở khóa tài khoản VIP và chuyển tiền thưởng NGAY LẬP TỨC! 
+
+👉 VÀO NGAY: https://caminos.da.upm.es 
+⏳ AI CHẬM TAY LÀ MẤT VĨNH VIỄN!`,
+
+      3: `Main kan sekarang
+🎰 SLOT [slot5000] 🀄 LAGI POPULER GILA GILAAN SEKARANG!!💥
+Ayo mainkan slot populer [slot5000] 🀄 sekarang, situ andalan tempat bermain slot 🎰 untuk kalian, ini juga tempat andalan saya untuk bermain🔥🔥🔥
+
+💰investasikan hanya Rp500.000 Sampai Rp5.000.000🤑 hanya di situr slot 🎰 [slot5000]  🀄 kamu bisa menjadi kaya raya! 🎉💵💰 daftar sekarang di [slot5000]  Selagi masih gacor
+
+🎰 🔗 Link pendaftaran Slot [slot5000]  🀄
+[https://alur.cc/jgavs]
+[https://alur.cc/jgavs]
+[https://alur.cc/jgavs]
+
+⚡⚡dijamin dapet scatter 5x jika deposit Rp5.000 🤑🤑 Semakin Gede Deposit semakin banyak hadiahnya selamat🎉🤑💰
+
+💥‼️ Main terus sampai menang di [slot5000]  🀄🔥🔥
+Dan dapatkan jackpot senilai Rp 10.000.000 🎁🎁🎁 🥳🤑🤑
+Ayo main sekarang juga! 🎰🎰 Jangan lewatkan jam GACOR! 💥🔥🔥
+
+#MAHJONG222 #casinoMAHJONG222
+#mahjong222gacor🔥  #SlotKonoha 
+#slottergacor🔥 #SlotTerbaru 
+#slot #daftarmahjong222sekarang`,
+
+      4: `💣🔥 OLÁ MARK ZUCKERBERG 🔥💣
+🚫 Me bloqueie agora se tiver coragem!
+🚫 Me bloqueie agora se tiver coragem!
+🚫 Me bloqueie agora se tiver coragem!
+
+💸⚡ Meu lucro é mais rápido que o carregamento do seu servidor!
+💸⚡ Meu lucro é mais rápido que o carregamento do seu servidor!
+💸⚡ Meu lucro é mais rápido que o carregamento do seu servidor!
+
+🎰🔥 SLOT ONLINE Nº1 DO BRASIL 🔥🎰
+🎁 Bônus 100% • 💰 Jackpot de Centenas de Milhares 💥
+🎁 Bônus 100% • 💰 Jackpot de Centenas de Milhares 💥
+🎁 Bônus 100% • 💰 Jackpot de Centenas de Milhares 💥
+
+👉 https://kado77aa.otomotif.blog/ 
+👉 https://kado77aa.otomotif.blog/ 
+👉 https://kado77aa.otomotif.blog/ 
+
+#ZarxxBanindo 💣 #MetaDerrotada 🔥 #BloqueieSeTiverCoragem 🚫
+#ZarxxBanindo 💣 #MetaDerrotada 🔥 #BloqueieSeTiverCoragem 🚫
+#ZarxxBanindo 💣 #MetaDerrotada 🔥 #BloqueieSeTiverCoragem 🚫
+#GyzenOffcPromo😈👁`
+    };
+
+    function copyText(boxNum) {
+      const textToCopy = messages[boxNum];
+      const successMsg = document.getElementById('success-message');
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          showSuccess();
+        }).catch(() => fallbackCopy(textToCopy));
+      } else {
+        fallbackCopy(textToCopy);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const ta = document.getElementById('fallback-textarea');
+      ta.value = text;
+      ta.select();
+      ta.setSelectionRange(0, 99999);
+      try {
+        if (document.execCommand('copy')) {
+          showSuccess();
+        } else {
+          alert('Gagal menyalin. Silakan salin manual.');
+        }
+      } catch (err) {
+        alert('Browser tidak mendukung salin otomatis.');
+      }
+    }
+
+    function showSuccess() {
+      const msg = document.getElementById('success-message');
+      msg.style.display = 'block';
+      setTimeout(() => {
+        msg.style.display = 'none';
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
